@@ -24,7 +24,7 @@ public class SmokeIT {
         HttpResponse createTestBlogResponse = createTestBlog.execute().returnResponse();
         assertThat(
                 createTestBlogResponse.getHeaders("Location")[0].getValue(),
-                equalTo("http://localhost:8080/tester/blog/1"));
+                equalTo(APP_URL + "tester/blog/1"));
 
 
         Request getTestBlog = Request.Get(APP_URL + "tester/blog/1");

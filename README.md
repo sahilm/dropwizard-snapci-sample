@@ -22,7 +22,7 @@ Snap follows Heroku's convention of injecting a `DATABASE_URL` environment varia
 
 Our sample service is already setup to leverage the `DATABASE_URL` environment variable. The code to do this is located in [MicroBlogDatabaseConfiguration.java](https://github.com/sahilm/dropwizard-snapci-sample/blob/master/src/main/java/com/snapci/microblog/MicroBlogDatabaseConfiguration.java). Here's the meat of it:
 
-'''
+```java
 public class MicroBlogDatabaseConfiguration {
     final static Logger logger = LoggerFactory.getLogger(MicroBlogDatabaseConfiguration.class);
 
@@ -48,4 +48,6 @@ public class MicroBlogDatabaseConfiguration {
         return databaseConfiguration;
     }
 }
-'''
+```
+
+

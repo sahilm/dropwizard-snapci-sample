@@ -73,3 +73,5 @@ To setup the stage:
 - And you're done!
 
 That's all there's to it. We've setup a complete deployment pipeline for our Dropwizard service. Snap will track all subsequent commits to this repository and deploy all green builds to Heroku.
+
+)
